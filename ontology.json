@@ -1,0 +1,587 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Sjors van Gool"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbXML",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://www.linkedin.com/in/sjorsvangool/"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The Ontology for Managing gbXML spatial data (ogbxml) is used to easily navigate through the spatial data in a graph that can be appended from a gbXML file. \r\n\r\nThis ontology is created as part of a master thesis within the Built Environment faculty of the Technical University of Eindhoven."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "ogbxml: Ontology for Managing gbXML spatial data"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ogbxml"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Campus"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#BuildingStorey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BuildingStorey"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Building"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Campus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Campus"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#CartesianPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CartesianPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#RectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#ClosedShell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClosedShell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#ShellGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Campus"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Opening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Opening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Surface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#PlanarGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PlanarGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#BuildingStorey"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Space"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#SpaceBoundary"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Surface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#PolyLoop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PolyLoop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#ClosedShell"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#PlanarGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#RectangularGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RectangularGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#BuildingStorey"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Space"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Surface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#ShellGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ShellGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Space"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Building"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#SpaceBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SpaceBoundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Space"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#Surface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Surface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#Campus"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAdjacentSpaceId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasAzimuth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAzimuth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuildingStorey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuildingType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasClosedShell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasShellGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCADModelAzimuth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasCADObjectId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCADObjectId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpening"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasCampus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasCartesianPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCartesianPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasPolyLoop"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasClosedShell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasClosedShell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasShellGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasCartesianPoint"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasDaylightSavings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasDaylightSavings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasCampus"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasElevation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasElevation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasHeight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasHostingWallId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasHostingWallId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpening"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasShellGeometry"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasLatitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLatitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasLongitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLongitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasCampus"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpening"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  }, {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasOpening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpeningType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasOpeningType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasOpening"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasPlanarGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasPolyLoop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasPolyLoop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasShellGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasShellGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSpace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasStationId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasStreetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasStreetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSurface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasBuilding"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSurfaceIdRef"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurfaceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSurfaceType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSurface"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasTilt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTilt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasVolume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasVolume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpace"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasWidth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasWidth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasZipcodeOrPostalCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasLocation"
+  } ]
+}, {
+  "@id" : "https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isSecondLevelBoundary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary"
+  } ]
+} ]

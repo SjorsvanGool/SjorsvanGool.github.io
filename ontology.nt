@@ -1,0 +1,335 @@
+<https://sjorsvangool.github.io/ogbXML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://sjorsvangool.github.io/ogbXML> <http://purl.org/dc/terms/creator> <https://www.linkedin.com/in/sjorsvangool/> .
+<https://sjorsvangool.github.io/ogbXML> <http://purl.org/dc/terms/description> "The Ontology for Managing gbXML spatial data (ogbxml) is used to easily navigate through the spatial data in a graph that can be appended from a gbXML file. \r\n\r\nThis ontology is created as part of a master thesis within the Built Environment faculty of the Technical University of Eindhoven."@en .
+<https://sjorsvangool.github.io/ogbXML> <http://purl.org/dc/terms/title> "ogbxml: Ontology for Managing gbXML spatial data"@en .
+<https://sjorsvangool.github.io/ogbXML> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ogbxml" .
+<https://sjorsvangool.github.io/ogbXML> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://sjorsvangool.github.io/ogbxml> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId
+<https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdjacentSpaceId"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasArea
+<https://sjorsvangool.github.io/ogbxml#hasArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuildingStorey> .
+<https://sjorsvangool.github.io/ogbxml#hasBuildingStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasArea> <http://www.w3.org/2000/01/rdf-schema#label> "hasArea"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasAzimuth
+<https://sjorsvangool.github.io/ogbxml#hasAzimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasAzimuth> <http://www.w3.org/2000/01/rdf-schema#label> "hasAzimuth"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasBuilding
+# 
+# https://sjorsvangool.github.io/ogbxml#hasBuildingStorey
+# 
+# https://sjorsvangool.github.io/ogbxml#hasBuildingType
+<https://sjorsvangool.github.io/ogbxml#hasBuildingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasBuildingType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasShellGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasBuildingType> <http://www.w3.org/2000/01/rdf-schema#label> "hasClosedShell"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth
+<https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth> <http://www.w3.org/2000/01/rdf-schema#label> "hasCADModelAzimuth"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasCADObjectId
+<https://sjorsvangool.github.io/ogbxml#hasCADObjectId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasCADObjectId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasOpening> .
+<https://sjorsvangool.github.io/ogbxml#hasCADObjectId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasCADObjectId> <http://www.w3.org/2000/01/rdf-schema#label> "hasCADObjectId"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasCampus
+<https://sjorsvangool.github.io/ogbxml#hasCampus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasCartesianPoint
+<https://sjorsvangool.github.io/ogbxml#hasCartesianPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasCartesianPoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasPolyLoop> .
+<https://sjorsvangool.github.io/ogbxml#hasCartesianPoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasCartesianPoint> <http://www.w3.org/2000/01/rdf-schema#label> "hasCartesianPoint"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasClosedShell
+<https://sjorsvangool.github.io/ogbxml#hasClosedShell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasClosedShell> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasShellGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasClosedShell> <http://www.w3.org/2000/01/rdf-schema#label> "hasClosedShell"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasCoordinate
+<https://sjorsvangool.github.io/ogbxml#hasCoordinate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasCartesianPoint> .
+<https://sjorsvangool.github.io/ogbxml#hasCoordinate> <http://www.w3.org/2000/01/rdf-schema#label> "hasCoordinate"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasDaylightSavings
+<https://sjorsvangool.github.io/ogbxml#hasDaylightSavings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasDaylightSavings> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasCampus> .
+<https://sjorsvangool.github.io/ogbxml#hasDaylightSavings> <http://www.w3.org/2000/01/rdf-schema#label> "hasDaylightSavings"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasElevation
+<https://sjorsvangool.github.io/ogbxml#hasElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasElevation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasElevation> <http://www.w3.org/2000/01/rdf-schema#label> "hasElevation"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasHeight
+<https://sjorsvangool.github.io/ogbxml#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasHeight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasHeight> <http://www.w3.org/2000/01/rdf-schema#label> "hasHeight"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasHostingWallId
+<https://sjorsvangool.github.io/ogbxml#hasHostingWallId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasHostingWallId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasHostingWallId> <http://www.w3.org/2000/01/rdf-schema#label> "hasHostingWallId"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasId
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasOpening> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasShellGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasId> <http://www.w3.org/2000/01/rdf-schema#label> "hasId"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasLatitude
+<https://sjorsvangool.github.io/ogbxml#hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLatitude"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasLevel
+<https://sjorsvangool.github.io/ogbxml#hasLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasLevel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuildingStorey> .
+<https://sjorsvangool.github.io/ogbxml#hasLevel> <http://www.w3.org/2000/01/rdf-schema#label> "hasLevel"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasLocation
+<https://sjorsvangool.github.io/ogbxml#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasLongitude
+<https://sjorsvangool.github.io/ogbxml#hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "hasLongitude"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasName
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuildingStorey> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasCampus> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasOpening> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasOpening
+<https://sjorsvangool.github.io/ogbxml#hasOpening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasOpening> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasOpening> <http://www.w3.org/2000/01/rdf-schema#label> "hasOpening"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasOpeningType
+<https://sjorsvangool.github.io/ogbxml#hasOpeningType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasOpeningType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasOpening> .
+<https://sjorsvangool.github.io/ogbxml#hasOpeningType> <http://www.w3.org/2000/01/rdf-schema#label> "hasOpeningType"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry
+<https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasPlanarGeometry"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasPolyLoop
+<https://sjorsvangool.github.io/ogbxml#hasPolyLoop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasPolyLoop> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasPolyLoop> <http://www.w3.org/2000/01/rdf-schema#label> "hasPolyLoop"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry
+# 
+# https://sjorsvangool.github.io/ogbxml#hasShellGeometry
+<https://sjorsvangool.github.io/ogbxml#hasShellGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasShellGeometry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasShellGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasShellGeometry"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasSpace
+<https://sjorsvangool.github.io/ogbxml#hasSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasSpace> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpace"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary
+<https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasStationId
+<https://sjorsvangool.github.io/ogbxml#hasStationId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasStationId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasStationId> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasStreetAddress
+<https://sjorsvangool.github.io/ogbxml#hasStreetAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasStreetAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasStreetAddress> <http://www.w3.org/2000/01/rdf-schema#label> "hasStreetAddress"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasSurface
+<https://sjorsvangool.github.io/ogbxml#hasSurface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasSurface> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasBuilding> .
+<https://sjorsvangool.github.io/ogbxml#hasSurface> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurface"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary> .
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurfaceIdRef"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasSurfaceType
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSurface> .
+<https://sjorsvangool.github.io/ogbxml#hasSurfaceType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurfaceType"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasTilt
+<https://sjorsvangool.github.io/ogbxml#hasTilt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasTilt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasTilt> <http://www.w3.org/2000/01/rdf-schema#label> "hasTilt"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasVolume
+<https://sjorsvangool.github.io/ogbxml#hasVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasVolume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpace> .
+<https://sjorsvangool.github.io/ogbxml#hasVolume> <http://www.w3.org/2000/01/rdf-schema#label> "hasVolume"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasWidth
+<https://sjorsvangool.github.io/ogbxml#hasWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasWidth> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#hasWidth> <http://www.w3.org/2000/01/rdf-schema#label> "hasWidth"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode
+<https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasLocation> .
+<https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode> <http://www.w3.org/2000/01/rdf-schema#label> "hasZipcodeOrPostalCode"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary
+<https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary> .
+<https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "isSecondLevelBoundary"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://sjorsvangool.github.io/ogbxml#Building
+<https://sjorsvangool.github.io/ogbxml#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Campus> .
+<https://sjorsvangool.github.io/ogbxml#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#BuildingStorey
+<https://sjorsvangool.github.io/ogbxml#BuildingStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#BuildingStorey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Building> .
+<https://sjorsvangool.github.io/ogbxml#BuildingStorey> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingStorey"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#Campus
+<https://sjorsvangool.github.io/ogbxml#Campus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Campus> <http://www.w3.org/2000/01/rdf-schema#label> "Campus"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#CartesianPoint
+<https://sjorsvangool.github.io/ogbxml#CartesianPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#CartesianPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#RectangularGeometry> .
+<https://sjorsvangool.github.io/ogbxml#CartesianPoint> <http://www.w3.org/2000/01/rdf-schema#label> "CartesianPoint"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#ClosedShell
+<https://sjorsvangool.github.io/ogbxml#ClosedShell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#ClosedShell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#ShellGeometry> .
+<https://sjorsvangool.github.io/ogbxml#ClosedShell> <http://www.w3.org/2000/01/rdf-schema#label> "ClosedShell"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#Location
+<https://sjorsvangool.github.io/ogbxml#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Campus> .
+<https://sjorsvangool.github.io/ogbxml#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#Opening
+<https://sjorsvangool.github.io/ogbxml#Opening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Opening> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Surface> .
+<https://sjorsvangool.github.io/ogbxml#Opening> <http://www.w3.org/2000/01/rdf-schema#label> "Opening"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#PlanarGeometry
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#BuildingStorey> .
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Space> .
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#SpaceBoundary> .
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Surface> .
+<https://sjorsvangool.github.io/ogbxml#PlanarGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "PlanarGeometry"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#PolyLoop
+<https://sjorsvangool.github.io/ogbxml#PolyLoop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#PolyLoop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#ClosedShell> .
+<https://sjorsvangool.github.io/ogbxml#PolyLoop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#PlanarGeometry> .
+<https://sjorsvangool.github.io/ogbxml#PolyLoop> <http://www.w3.org/2000/01/rdf-schema#label> "PolyLoop"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#RectangularGeometry
+<https://sjorsvangool.github.io/ogbxml#RectangularGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#RectangularGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#BuildingStorey> .
+<https://sjorsvangool.github.io/ogbxml#RectangularGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Space> .
+<https://sjorsvangool.github.io/ogbxml#RectangularGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Surface> .
+<https://sjorsvangool.github.io/ogbxml#RectangularGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "RectangularGeometry"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#ShellGeometry
+<https://sjorsvangool.github.io/ogbxml#ShellGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#ShellGeometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Space> .
+<https://sjorsvangool.github.io/ogbxml#ShellGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "ShellGeometry"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#Space
+<https://sjorsvangool.github.io/ogbxml#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Space> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Building> .
+<https://sjorsvangool.github.io/ogbxml#Space> <http://www.w3.org/2000/01/rdf-schema#label> "Space"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#SpaceBoundary
+<https://sjorsvangool.github.io/ogbxml#SpaceBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#SpaceBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Space> .
+<https://sjorsvangool.github.io/ogbxml#SpaceBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "SpaceBoundary"@en .
+# 
+# https://sjorsvangool.github.io/ogbxml#Surface
+<https://sjorsvangool.github.io/ogbxml#Surface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sjorsvangool.github.io/ogbxml#Surface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sjorsvangool.github.io/ogbxml#Campus> .
+<https://sjorsvangool.github.io/ogbxml#Surface> <http://www.w3.org/2000/01/rdf-schema#label> "Surface"@en .
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Sjors van Gool" .
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

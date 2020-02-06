@@ -1,0 +1,1027 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://sjorsvangool.github.io/ogbxml", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "ogbxml: Ontology for Managing gbXML spatial data"
+    },
+    "iri" : "https://sjorsvangool.github.io/ogbXML",
+    "author" : [ "https://www.linkedin.com/in/sjorsvangool/" ],
+    "description" : {
+      "en" : "The Ontology for Managing gbXML spatial data (ogbxml) is used to easily navigate through the spatial data in a graph that can be appended from a gbXML file. \r\n\r\nThis ontology is created as part of a master thesis within the Built Environment faculty of the Technical University of Eindhoven."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.linkedin.com/in/sjorsvangool/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ogbxml",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://sjorsvangool.github.io/ogbxml",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ogbxml: Ontology for Managing gbXML spatial data",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#ShellGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShellGeometry",
+      "en" : "ShellGeometry"
+    },
+    "subClasses" : [ "18" ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#RectangularGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RectangularGeometry",
+      "en" : "RectangularGeometry"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "17", "20", "21" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Campus",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Campus",
+      "en" : "Campus"
+    },
+    "subClasses" : [ "33", "34", "21" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#ClosedShell",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClosedShell",
+      "en" : "ClosedShell"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#PolyLoop",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolyLoop",
+      "en" : "PolyLoop"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "18", "43" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Location",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#BuildingStorey",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingStorey",
+      "en" : "BuildingStorey"
+    },
+    "subClasses" : [ "43", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Building",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building"
+    },
+    "subClasses" : [ "17", "20" ],
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#CartesianPoint",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CartesianPoint",
+      "en" : "CartesianPoint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Surface",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Surface",
+      "en" : "Surface"
+    },
+    "subClasses" : [ "61", "43", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Space",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space",
+      "en" : "Space"
+    },
+    "subClasses" : [ "43", "50", "16", "19" ],
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#PlanarGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanarGeometry",
+      "en" : "PlanarGeometry"
+    },
+    "subClasses" : [ "38" ],
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "17", "50", "20", "21" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#Opening",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opening",
+      "en" : "Opening"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#SpaceBoundary",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpaceBoundary",
+      "en" : "SpaceBoundary"
+    },
+    "subClasses" : [ "43" ],
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "17" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasDaylightSavings",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasDaylightSavings",
+      "en" : "hasDaylightSavings"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSurfaceIdRef",
+      "en" : "hasSurfaceIdRef"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasOpening",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasOpening",
+      "en" : "hasOpening"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "subproperty" : [ "7", "8", "9", "10" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasCartesianPoint",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCartesianPoint",
+      "en" : "hasCartesianPoint"
+    },
+    "superproperty" : [ "12", "13" ],
+    "domain" : "1",
+    "subproperty" : [ "14" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasHostingWallId",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasHostingWallId",
+      "en" : "hasHostingWallId"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasSurface",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSurface",
+      "en" : "hasSurface"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "1",
+    "subproperty" : [ "24", "8", "9", "25", "5", "15", "10" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAdjacentSpaceId",
+      "en" : "hasAdjacentSpaceId"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasZipcodeOrPostalCode",
+      "en" : "hasZipcodeOrPostalCode"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSecondLevelBoundary",
+      "en" : "isSecondLevelBoundary"
+    },
+    "superproperty" : [ "4" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasBuildingType",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasBuildingType",
+      "en" : "hasClosedShell"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasPolyLoop",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPolyLoop",
+      "en" : "hasPolyLoop"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "1",
+    "subproperty" : [ "11" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasBuilding",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasBuilding"
+    },
+    "domain" : "1",
+    "subproperty" : [ "8", "9", "35", "36", "37", "6" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasElevation",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasElevation",
+      "en" : "hasElevation"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasAzimuth",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAzimuth",
+      "en" : "hasAzimuth"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasBuildingStorey",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasBuildingStorey"
+    },
+    "domain" : "1",
+    "subproperty" : [ "9", "35", "42" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRectangularGeometry"
+    },
+    "domain" : "1",
+    "subproperty" : [ "44", "11", "40", "45", "46" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasTilt",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasTilt",
+      "en" : "hasTilt"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "43",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasSurfaceType",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSurfaceType",
+      "en" : "hasSurfaceType"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "50",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "17",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "21",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "17",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasShellGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasShellGeometry",
+      "en" : "hasShellGeometry"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "1",
+    "subproperty" : [ "8", "55", "29" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "33",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "21",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasVolume",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasVolume",
+      "en" : "hasVolume"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "21",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasOpeningType",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasOpeningType",
+      "en" : "hasOpeningType"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasName",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasName",
+      "en" : "hasName"
+    },
+    "superproperty" : [ "23", "2", "36", "5", "41", "27", "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasArea",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasArea",
+      "en" : "hasArea"
+    },
+    "superproperty" : [ "23", "36", "41" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasLongitude",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLongitude",
+      "en" : "hasLongitude"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasStationId",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasStationId",
+      "en" : "hasLocation"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasCoordinate",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCoordinate",
+      "en" : "hasCoordinate"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSpaceBoundary"
+    },
+    "domain" : "1",
+    "subproperty" : [ "3", "28" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasLevel",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLevel",
+      "en" : "hasLevel"
+    },
+    "superproperty" : [ "41" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "19",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasClosedShell",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasClosedShell",
+      "en" : "hasClosedShell"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "32",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "32",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "18",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasStreetAddress",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasStreetAddress",
+      "en" : "hasStreetAddress"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "20",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "33",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasCampus",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCampus"
+    },
+    "domain" : "1",
+    "subproperty" : [ "0", "9" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPlanarGeometry",
+      "en" : "hasPlanarGeometry"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "1",
+    "subproperty" : [ "13" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasSpace",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSpace",
+      "en" : "hasSpace"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "1",
+    "subproperty" : [ "8", "9", "31", "35", "30", "59" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCADModelAzimuth",
+      "en" : "hasCADModelAzimuth"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasHeight",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasHeight",
+      "en" : "hasHeight"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasLocation",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "en" : "hasLocation"
+    },
+    "domain" : "1",
+    "subproperty" : [ "9", "39", "74", "62", "63", "72", "26" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasWidth",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasWidth",
+      "en" : "hasWidth"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasLatitude",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasLatitude",
+      "en" : "hasLatitude"
+    },
+    "superproperty" : [ "27" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasCADObjectId",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCADObjectId",
+      "en" : "hasCADObjectId"
+    },
+    "superproperty" : [ "5", "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://sjorsvangool.github.io/ogbxml#hasId",
+    "baseIri" : "https://sjorsvangool.github.io/ogbxml",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasId",
+      "en" : "hasId"
+    },
+    "superproperty" : [ "23", "36", "5", "30", "6" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  } ]
+}

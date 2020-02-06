@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://sjorsvangool.github.io/ogbXML#"
+     xml:base="https://sjorsvangool.github.io/ogbXML"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://sjorsvangool.github.io/ogbXML">
+        <terms:creator rdf:resource="https://www.linkedin.com/in/sjorsvangool/"/>
+        <terms:description xml:lang="en">The Ontology for Managing gbXML spatial data (ogbxml) is used to easily navigate through the spatial data in a graph that can be appended from a gbXML file. 
+
+This ontology is created as part of a master thesis within the Built Environment faculty of the Technical University of Eindhoven.</terms:description>
+        <terms:title xml:lang="en">ogbxml: Ontology for Managing gbXML spatial data</terms:title>
+        <vann:preferredNamespacePrefix>ogbxml</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://sjorsvangool.github.io/ogbxml"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasAdjacentSpaceId">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasAdjacentSpaceId</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasArea -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasArea">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:label xml:lang="en">hasArea</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasAzimuth -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasAzimuth">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+        <rdfs:label xml:lang="en">hasAzimuth</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasBuilding -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasBuildingStorey -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasBuildingType -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasBuildingType">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasShellGeometry"/>
+        <rdfs:label xml:lang="en">hasClosedShell</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasCADModelAzimuth">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasCADModelAzimuth</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasCADObjectId -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasCADObjectId">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasOpening"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasCADObjectId</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasCampus -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasCampus"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasCartesianPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasCartesianPoint">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasPolyLoop"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+        <rdfs:label xml:lang="en">hasCartesianPoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasClosedShell -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasClosedShell">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasShellGeometry"/>
+        <rdfs:label xml:lang="en">hasClosedShell</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasCoordinate">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasCartesianPoint"/>
+        <rdfs:label xml:lang="en">hasCoordinate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasDaylightSavings -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasDaylightSavings">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasCampus"/>
+        <rdfs:label xml:lang="en">hasDaylightSavings</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasElevation -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasElevation">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasElevation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasHeight -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasHeight">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+        <rdfs:label xml:lang="en">hasHeight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasHostingWallId -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasHostingWallId">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasHostingWallId</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasId -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasId">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasOpening"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasShellGeometry"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasId</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasLatitude -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasLatitude">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasLatitude</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasLevel">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"/>
+        <rdfs:label xml:lang="en">hasLevel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasLocation">
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasLongitude -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasLongitude">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasLongitude</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasName -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasName">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuildingStorey"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasCampus"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasOpening"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasOpening -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasOpening">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasOpening</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasOpeningType -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasOpeningType">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasOpening"/>
+        <rdfs:label xml:lang="en">hasOpeningType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:label xml:lang="en">hasPlanarGeometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasPolyLoop -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasPolyLoop">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasPlanarGeometry"/>
+        <rdfs:label xml:lang="en">hasPolyLoop</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasShellGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasShellGeometry">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:label xml:lang="en">hasShellGeometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasSpace -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasSpace">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:label xml:lang="en">hasSpace</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasStationId -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasStationId">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasStreetAddress -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasStreetAddress">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:label xml:lang="en">hasStreetAddress</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasSurface -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasSurface">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasBuilding"/>
+        <rdfs:label xml:lang="en">hasSurface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasSurfaceIdRef">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary"/>
+        <rdfs:label xml:lang="en">hasSurfaceIdRef</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasSurfaceType -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasSurfaceType">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSurface"/>
+        <rdfs:label xml:lang="en">hasSurfaceType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasTilt -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasTilt">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+        <rdfs:label xml:lang="en">hasTilt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasVolume -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpace"/>
+        <rdfs:label xml:lang="en">hasVolume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasWidth -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasWidth">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasRectangularGeometry"/>
+        <rdfs:label xml:lang="en">hasWidth</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#hasZipcodeOrPostalCode">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasLocation"/>
+        <rdfs:label xml:lang="en">hasZipcodeOrPostalCode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary -->
+
+
+    <owl:ObjectProperty rdf:about="https://sjorsvangool.github.io/ogbxml#isSecondLevelBoundary">
+        <rdfs:subPropertyOf rdf:resource="https://sjorsvangool.github.io/ogbxml#hasSpaceBoundary"/>
+        <rdfs:label xml:lang="en">isSecondLevelBoundary</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Building -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Building">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Campus"/>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#BuildingStorey -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#BuildingStorey">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Building"/>
+        <rdfs:label xml:lang="en">BuildingStorey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Campus -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Campus">
+        <rdfs:label xml:lang="en">Campus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#CartesianPoint -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#CartesianPoint">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#RectangularGeometry"/>
+        <rdfs:label xml:lang="en">CartesianPoint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#ClosedShell -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#ClosedShell">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#ShellGeometry"/>
+        <rdfs:label xml:lang="en">ClosedShell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Location -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Location">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Campus"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Opening -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Opening">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Surface"/>
+        <rdfs:label xml:lang="en">Opening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#PlanarGeometry -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#PlanarGeometry">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#BuildingStorey"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Space"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#SpaceBoundary"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Surface"/>
+        <rdfs:label xml:lang="en">PlanarGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#PolyLoop -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#PolyLoop">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#ClosedShell"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#PlanarGeometry"/>
+        <rdfs:label xml:lang="en">PolyLoop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#RectangularGeometry -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#RectangularGeometry">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#BuildingStorey"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Space"/>
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Surface"/>
+        <rdfs:label xml:lang="en">RectangularGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#ShellGeometry -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#ShellGeometry">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Space"/>
+        <rdfs:label xml:lang="en">ShellGeometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Space -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Space">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Building"/>
+        <rdfs:label xml:lang="en">Space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#SpaceBoundary -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#SpaceBoundary">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Space"/>
+        <rdfs:label xml:lang="en">SpaceBoundary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sjorsvangool.github.io/ogbxml#Surface -->
+
+
+    <owl:Class rdf:about="https://sjorsvangool.github.io/ogbxml#Surface">
+        <rdfs:subClassOf rdf:resource="https://sjorsvangool.github.io/ogbxml#Campus"/>
+        <rdfs:label xml:lang="en">Surface</rdfs:label>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Sjors van Gool</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
