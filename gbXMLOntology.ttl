@@ -1,0 +1,302 @@
+@prefix bot: <https://w3id.org/bot#> .
+@prefix props: <https://w3id.org/props#> .
+@prefix omg: <https://w3id.org/omg#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ogbxml: <https://tue.nl/ogbxml#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix opm: <https://w3id.org/opm#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix seas: <https://w3id.org/seas/#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+foaf:Person
+  rdf:type owl:Class ;
+.
+foaf:name
+  rdf:type owl:AnnotationProperty ;
+.
+<https://tue.nl/gbXML>
+  rdf:type owl:Ontology ;
+  dcterms:creator <https://www.linkedin.com/in/sjorsvangool/> ;
+  dcterms:description """The Ontology for Managing gbXML spatial data (ogbxml) is used to easily navigate through the spatial data in a graph that can be appended from a gbXML file. 
+
+This ontology is created as part of a master thesis within the Built Environment faculty of the Technical University of Eindhoven."""@en ;
+
+  dcterms:title "ogbxml: Ontology for Managing gbXML spatial data"@en ;
+  vann:preferredNamespacePrefix "ogbxml" ;
+  vann:preferredNamespaceUri <https://tue.nl/ogbxml> ;
+.
+ogbxml:Campus
+  rdf:type owl:Class ;
+  rdfs:label "Campus"@en ;
+.
+ogbxml:Location
+  rdf:type owl:Class ;
+  rdfs:label "Location"@en ;
+  rdfs:subClassOf ogbxml:Campus ;
+.
+ogbxml:Building
+  rdf:type owl:Class ;
+  rdfs:label "Building"@en ;
+  rdfs:subClassOf ogbxml:Campus ;
+.
+ogbxml:BuildingStorey
+  rdf:type owl:Class ;
+  rdfs:label "BuildingStorey"@en ;
+  rdfs:subClassOf ogbxml:Building ;
+.
+ogbxml:Space
+  rdf:type owl:Class ;
+  rdfs:label "Space"@en ;
+  rdfs:subClassOf ogbxml:Building ;
+.
+ogbxml:Surface
+  rdf:type owl:Class ;
+  rdfs:label "Surface"@en ;
+  rdfs:subClassOf ogbxml:Campus ;
+. 
+ogbxml:Opening
+  rdf:type owl:Class ;
+  rdfs:label "Opening"@en ;
+  rdfs:subClassOf ogbxml:Surface ;
+.
+ogbxml:PlanarGeometry
+  rdf:type owl:Class ;
+  rdfs:label "PlanarGeometry"@en ;
+  rdfs:subClassOf ogbxml:Space ;
+  rdfs:subClassOf ogbxml:BuildingStorey;
+  rdfs:subClassOf ogbxml:Surface;
+  rdfs:subClassOf ogbxml:SpaceBoundary;
+. 
+ogbxml:RectangularGeometry
+  rdf:type owl:Class ;
+  rdfs:label "RectangularGeometry"@en ;
+  rdfs:subClassOf ogbxml:Space ;
+  rdfs:subClassOf ogbxml:BuildingStorey ;
+  rdfs:subClassOf ogbxml:Surface ;
+. 
+ogbxml:PolyLoop
+  rdf:type owl:Class ;
+  rdfs:label "PolyLoop"@en ;
+  rdfs:subClassOf ogbxml:PlanarGeometry ;
+  rdfs:subClassOf ogbxml:ClosedShell ;
+. 
+ogbxml:CartesianPoint
+  rdf:type owl:Class ;
+  rdfs:label "CartesianPoint"@en ;
+  rdfs:subClassOf ogbxml:RectangularGeometry ;
+.
+ogbxml:ShellGeometry
+  rdf:type owl:Class ;
+  rdfs:label "ShellGeometry"@en ;
+  rdfs:subClassOf ogbxml:Space ;
+. 
+ogbxml:ClosedShell
+  rdf:type owl:Class ;
+  rdfs:label "ClosedShell"@en ;
+  rdfs:subClassOf ogbxml:ShellGeometry ;
+. 
+ogbxml:SpaceBoundary
+  rdf:type owl:Class ;
+  rdfs:label "SpaceBoundary"@en ;
+  rdfs:subClassOf ogbxml:Space ;
+.
+ogbxml:hasId
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasId"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+  rdfs:subPropertyOf ogbxml:hasOpening ;
+  rdfs:subPropertyOf ogbxml:hasShellGeometry;
+.
+ogbxml:hasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasLocation"@en ;
+.
+ogbxml:hasStationId
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasLocation"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasZipcodeOrPostalCode
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasZipcodeOrPostalCode"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasLongitude
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasLongitude"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasLatitude
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasLatitude"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasElevation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasElevation"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasCADModelAzimuth
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasCADModelAzimuth"@en ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+.
+ogbxml:hasName
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasName"@en ;
+  rdfs:subPropertyOf ogbxml:hasCampus ;
+  rdfs:subPropertyOf ogbxml:hasLocation ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+  rdfs:subPropertyOf ogbxml:hasBuildingStorey ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+  rdfs:subPropertyOf ogbxml:hasOpening ;
+.
+ogbxml:hasStreetAddress
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasStreetAddress"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+.
+ogbxml:hasArea
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasArea"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+  rdfs:subPropertyOf ogbxml:hasBuildingStorey ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+.
+ogbxml:hasVolume
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasVolume"@en ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+.
+ogbxml:hasSpace
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasSpace"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+.
+ogbxml:hasPlanarGeometry
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasPlanarGeometry"@en ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+.
+ogbxml:hasShellGeometry
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasShellGeometry"@en ;
+  rdfs:subPropertyOf ogbxml:hasSpace ;
+.
+ogbxml:hasClosedShell
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasClosedShell"@en ;
+  rdfs:subPropertyOf ogbxml:hasShellGeometry ;
+.
+ogbxml:hasPolyLoop
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasPolyLoop"@en ;
+  rdfs:subPropertyOf ogbxml:hasPlanarGeometry ;
+.
+ogbxml:hasCartesianPoint
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasCartesianPoint"@en ;
+  rdfs:subPropertyOf ogbxml:hasPolyLoop ;
+  rdfs:subPropertyOf ogbxml:hasRectangularGeometry ;
+.
+ogbxml:hasCoordinate
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasCoordinate"@en ;
+  rdfs:subPropertyOf ogbxml:hasCartesianPoint ;
+.
+ogbxml:hasBuildingType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasClosedShell"@en ;
+  rdfs:subPropertyOf ogbxml:hasShellGeometry ;
+.
+ogbxml:isSecondLevelBoundary
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "isSecondLevelBoundary"@en ;
+  rdfs:subPropertyOf ogbxml:hasSpaceBoundary ;
+.
+ogbxml:hasSurfaceIdRef
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasSurfaceIdRef"@en ;
+  rdfs:subPropertyOf ogbxml:hasSpaceBoundary ;
+.
+ogbxml:hasLevel
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasLevel"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuildingStorey ;
+.
+ogbxml:hasSurfaceType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasSurfaceType"@en ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+.
+ogbxml:hasAdjacentSpaceId
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasAdjacentSpaceId"@en ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+.
+ogbxml:hasAzimuth
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasAzimuth"@en ;
+  rdfs:subPropertyOf ogbxml:hasRectangularGeometry ;
+.
+ogbxml:hasTilt
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasTilt"@en ;
+  rdfs:subPropertyOf ogbxml:hasRectangularGeometry ;
+.
+ogbxml:hasWidth
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasWidth"@en ;
+  rdfs:subPropertyOf ogbxml:hasRectangularGeometry ;
+.
+ogbxml:hasHeight
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasHeight"@en ;
+  rdfs:subPropertyOf ogbxml:hasRectangularGeometry ;
+.
+ogbxml:hasCADObjectId
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasCADObjectId"@en ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+  rdfs:subPropertyOf ogbxml:hasOpening ;
+.
+ogbxml:hasSurface
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasSurface"@en ;
+  rdfs:subPropertyOf ogbxml:hasBuilding ;
+.
+ogbxml:hasHostingWallId
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasHostingWallId"@en ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+.
+ogbxml:hasOpening
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasOpening"@en ;
+  rdfs:subPropertyOf ogbxml:hasSurface ;
+.
+ogbxml:hasOpeningType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasOpeningType"@en ;
+  rdfs:subPropertyOf ogbxml:hasOpening ;
+.
+ogbxml:hasDaylightSavings
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "hasDaylightSavings"@en ;
+  rdfs:subPropertyOf ogbxml:hasCampus ;
+.
+[
+  rdf:type foaf:Person ;
+  foaf:name "Sjors van Gool" ;
+].
